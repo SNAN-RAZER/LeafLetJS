@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Address Tracker</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="icon" href="./images/favicon-32x32.png">
+
+    <!-- leaflet css -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+    <!-- end of leaflet css -->
+
+    <!-- start of leaflet js -->
+     <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+ integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+ crossorigin=""></script>
+    <!-- end of leaflet js -->
+</head>
+<body>
+    <!-- start of header section -->
+    <header class="header">
+        <h1 class="heading">IP address Tracker</h1>
+        <div class="ip-input">
+            <input type="text" class="ip-address" placeholder="Search for any IP address or domain">
+            <button class="btn"></button>
+        </div>
+    </header>
+    <!-- end of header section -->
+
+    <!-- start of data -->
+    <section class="data">
+        <div class=" dat-data">
+            <h3 class="data-heading">ip address</h3>
+            <h1 class="data ip">192.212.174.101</h1>
+        </div>
+        <div class="dat-data">
+            <h3 class="data-heading">locations</h3>
+            <h1 class="data location">Brooklyn,NY 10001</h1>
+        </div>
+        <div class="dat-data">
+            <h3 class="data-heading">timezone</h3>
+            <h1 class="data utc">utc-05:00</h1>
+        </div>
+        <div class="dat-data">
+            <h3 class="data-heading">isp</h3>
+            <h1 class="data isp">spaceX startlink</h1>
+        </div>
+    </section>
+
+    <!-- end of data -->
+    <div class="footer" id="mapid">
+
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
